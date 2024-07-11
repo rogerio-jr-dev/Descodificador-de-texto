@@ -1,0 +1,90 @@
+:root{
+  --color-primary: #0A3871; 
+  --color-secondary:#343A40; 
+  --color-tertiary:#495057; 
+
+}
+.logo{
+  width: 120px;
+  height: 48px;
+  padding: 20px 10px;
+}
+.area-criptografando{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px 20px;
+}
+.texto-cripitografando{
+  display: block;
+  box-sizing: border-box;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  resize: none; /* Evita o redimensionamento do textarea (retira as duas barrinhas que faz crescer a area)*/
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  width: 100%;
+  height: 400px;
+  padding: 60px;
+}
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:4px;
+}
+.area-btn{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 40px;
+}
+.btn{
+  display: block;
+  background:var(--color-primary);
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+}
+.area-criptografando > .descriptografar{
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background: #ffffff;
+  border-radius: 32px;
+}
+.area-descriptografar img{
+ width: 336px;
+ height: 283px;
+}
+.info > span{
+  font-size: 1rem;
+  color: var(--color-tertiary);
+}
+.mensagem-info{
+  display: flex;
+  font-family: 'Roboto';
+  flex-direction: column;
+  align-items: center;
+}
+.mensagem-info > h1{
+  color: var(--color-secondary);
+  max-width: 250px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.mensagem-info > p{
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1rem;
+  max-width: 250px;
+  color: var(--color-tertiary);
+}
+/*--- tirar elementos da tela --- */
+.ativo {
+  display: flex;
+}
+.desativo {
+  display: none;
+}

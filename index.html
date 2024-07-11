@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Decodificador de Texto</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <img class="logo" src="assets/logoAlura.svg" alt="Logo da Alura">
+    </nav>
+  </header>
+  <main>
+    <article>
+        <div class="area-criptografando">
+          <div class="sub-area-criptografando">
+            <div class="cripitografando">
+              <textarea name="" id="textarea" class="texto-cripitografando">Digite seu texto</textarea>
+              <div class="info">
+                  <img src="assets/bi_exclamation-circle-fill.svg" alt="atenção ! Apenas letras minúsculas e sem acento."><span>Apenas letras minúsculas e sem acento.</span>
+              </div>
+            <div class="area-btn">
+              <button class="btn" onclick="criptografarTexto()">Criptografar</button>
+              <button class="btn" onclick="botaoDesencriptar()">Descriptografar</button>
+            </div>
+           </div>
+          </div>
+          <div class="descriptografar">
+              <div class="area-descriptografar">
+                <img id="imagemBusca" class="ativo" src="assets/imagemDeBusca.jpg" alt="Imagem de busca">
+                <div id="mensagemInfo" class="mensagem-info ativo">
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <p id="textoCopiado" class="desativo"></p>
+                    <button id="btnCopiar" class="btn desativo" onclick="copiarTexto()">Copiar</button>
+                </div>
+              </div>
+          </div>
+        </div>
+    </article>
+  </main>
+  <footer>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

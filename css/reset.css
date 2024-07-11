@@ -1,0 +1,12 @@
+body{
+  background-color: #f3f5fc;
+  margin: 0px;
+  padding: 0px;
+}
+ul, li, a, span,h1, h2, h3, p, button, img{
+  text-decoration: none;
+  list-style: none;
+  margin:0px;
+  padding: 0px;
+  font-weight: inherit;
+}
